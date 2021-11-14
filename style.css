@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 18px;
+}
+body {
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik', sans-serif;
+}
+.container {
+    margin: 10%;
+}
+.main-profile-card {
+    background-color: hsl(235, 46%, 20%);
+    width: 300px;
+    border-radius: 5%;
+}
+
+.profile-card {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 5%;
+    display: flex;
+}
+
+.name {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-top: 47px;
+}
+
+span {
+    font-size: 22px;
+}
+
+img.jeremy {
+    width: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+
+button {
+    background: none;
+    border: none;
+    justify-content: space-around;
+    padding: 10px;
+    margin-left: 10%;
+    color: hsl(236deg 23% 56%);
+}
+button:hover {
+    color: #fff;
+}
+
+.work {
+    background-color: hsl(15, 100%, 70%);
+    margin: 20px 0 20px 0;
+    border-radius: 5%;
+    width: 300px;
+}
+.work img {
+    border: none;
+    width: 100px;
+    margin: 0;
+    width: 40px;
+    margin-left: 243px;
+}
+.play {
+    background-color: hsl(195, 74%, 62%);
+    margin: 20px 0 20px 0;
+    border-radius: 5%;
+    width: 300px;
+}
+.play img {
+    border: none;
+    width: 100px;
+    margin: 0;
+    width: 40px;
+    margin-left: 243px;
+}
+.study {
+    background-color: hsl(348, 100%, 68%);
+    margin: 20px 0 20px 0;
+    border-radius: 5%;
+    width: 300px;
+}
+.study img {
+    border: none;
+    width: 100px;
+    margin: 0;
+    width: 40px;
+    margin-left: 243px;
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+    margin: 20px 0 20px 0;
+    border-radius: 5%;
+    width: 300px;
+}
+.exercise img {
+    border: none;
+    width: 100px;
+    margin: 0;
+    width: 40px;
+    margin-left: 243px;
+}
+
+.social {
+    background-color:  hsl(264, 64%, 52%);
+    margin: 20px 0 20px 0;
+    border-radius: 5%;
+    width: 300px;
+}
+.social img {
+    border: none;
+    width: 100px;
+    margin: 0;
+    width: 40px;
+    margin-left: 243px;
+}
+
+.self-care {
+    background-color: hsl(43, 84%, 65%);
+    margin: 20px 0 20px 0;
+    border-radius: 5%;
+    width: 300px;
+}
+.self-care img {
+    border: none;
+    width: 100px;
+    margin: 0;
+    width: 40px;
+    margin-left: 243px;
+}
+
+
+.lower-card {
+    background-color:  hsl(235, 46%, 20%);
+    border-radius: 5%;
+}
+.text, .hours {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 15px 20px;
+}
+.title, .time, .previous {
+    color: #fff;
+}
+.spread {
+    width: 40px;
+    padding: 5px;
+}
+.spread:hover {
+    color: #fff;
+}
