@@ -13,12 +13,17 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 .container {
-    margin: 10%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
 }
 .main-profile-card {
     background-color: hsl(235, 46%, 20%);
-    width: 300px;
     border-radius: 5%;
+    width: 100%;
 }
 
 .profile-card {
@@ -28,31 +33,34 @@ body {
 }
 
 .name {
-    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
     color: #fff;
     font-weight: 300;
-    margin-left: 10px;
     margin-top: 47px;
 }
 
 span {
-    font-size: 22px;
+    font-size: 1.475rem;
 }
 
 img.jeremy {
-    width: 100px;
+    width: 33%;
     border: 3px solid #fff;
     border-radius: 50%;
     margin: 15px;
+}
+.day-week-month {
+    display: flex;
+    justify-content: space-around;
 }
 
 
 button {
     background: none;
     border: none;
-    justify-content: space-around;
-    padding: 10px;
-    margin-left: 10%;
+    padding: 1.3rem;
     color: hsl(236deg 23% 56%);
 }
 button:hover {
@@ -61,103 +69,163 @@ button:hover {
 
 .work {
     background-color: hsl(15, 100%, 70%);
-    margin: 20px 0 20px 0;
+    background-image: url("images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position: 92% -1%;
+    width: 100%;
     border-radius: 5%;
-    width: 300px;
-}
-.work img {
-    border: none;
-    width: 100px;
-    margin: 0;
-    width: 40px;
-    margin-left: 243px;
 }
 .play {
     background-color: hsl(195, 74%, 62%);
-    margin: 20px 0 20px 0;
+    background-image: url("images/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: 92% -1%;
+    width: 100%;
     border-radius: 5%;
-    width: 300px;
-}
-.play img {
-    border: none;
-    width: 100px;
-    margin: 0;
-    width: 40px;
-    margin-left: 243px;
 }
 .study {
     background-color: hsl(348, 100%, 68%);
-    margin: 20px 0 20px 0;
+    background-image: url("images/icon-study.svg");
+    background-repeat: no-repeat;
+    background-position: 92% -1%;
+    width: 100%;
     border-radius: 5%;
-    width: 300px;
 }
-.study img {
-    border: none;
-    width: 100px;
-    margin: 0;
-    width: 40px;
-    margin-left: 243px;
-}
-
 .exercise {
     background-color: hsl(145, 58%, 55%);
-    margin: 20px 0 20px 0;
+    background-image: url("images/icon-exercise.svg");
+    background-repeat: no-repeat;
+    background-position: 92% -1%;
+    width: 100%;
     border-radius: 5%;
-    width: 300px;
 }
-.exercise img {
-    border: none;
-    width: 100px;
-    margin: 0;
-    width: 40px;
-    margin-left: 243px;
-}
-
 .social {
-    background-color:  hsl(264, 64%, 52%);
-    margin: 20px 0 20px 0;
+    background-color: hsl(264, 64%, 52%);
+    background-image: url("images/icon-social.svg");
+    background-repeat: no-repeat;
+    background-position: 92% -1%;
+    width: 100%;
     border-radius: 5%;
-    width: 300px;
 }
-.social img {
-    border: none;
-    width: 100px;
-    margin: 0;
-    width: 40px;
-    margin-left: 243px;
-}
-
 .self-care {
     background-color: hsl(43, 84%, 65%);
-    margin: 20px 0 20px 0;
+    background-image: url("images/icon-self-care.svg");
+    background-repeat: no-repeat;
+    background-position: 92% -1%;
+    width: 100%;
     border-radius: 5%;
-    width: 300px;
 }
-.self-care img {
-    border: none;
-    width: 100px;
-    margin: 0;
-    width: 40px;
-    margin-left: 243px;
-}
-
-
 .lower-card {
-    background-color:  hsl(235, 46%, 20%);
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 2rem;
     border-radius: 5%;
 }
-.text, .hours {
+.lower-card:hover {
+    background-color: hsl(236, 100%, 84%);
+}
+.row {
     display: flex;
     justify-content: space-between;
-    padding: 15px 20px 15px 20px;
+    padding: 1rem 1rem 0;
 }
-.title, .time, .previous {
+
+.title {
+    color: #fff;
+    font-weight: 500;
+}
+.points {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.point {
+    background-color: hsl(236, 100%, 87%);
+    width: 0.2rem;
+    height: 0.2rem;
+    margin: 0.1rem;
+    border-radius: 50%;
+}
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 1.3rem;
+}
+.time {
+    font-size: 1.3rem;
     color: #fff;
 }
-.spread {
-    width: 40px;
-    padding: 5px;
+
+.previous-session {
+    color: hsl(236, 100%, 87%);
 }
-.spread:hover {
-    color: #fff;
+
+@media screen and (min-width: 570px) {
+    .container {
+        display: grid;
+        grid-template-columns: 48% 48%;
+    }
+
+    .main-profile-card {
+        grid-column: 1 / span 2;
+    }
+
+    .row-1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .name {
+        margin-top: 15%;
+    }
+    .previous-session {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .container {
+        width: 77%;
+        grid-template-columns: 23% 23% 23% 23%;
+    }
+
+    .main-profile-card {
+        grid-row: 1 / span 2;
+        grid-column: unset;
+        height: 100%;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 70%;
+    }
+
+    .profile-card img {
+        width: 5rem;
+    }
+
+    .name {
+        margin: 8% 0 15% 5%;
+        font-weight: 300;
+    }
+    .day-week-month {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 30%;
+    }
+    button {
+        padding: 0.3rem;
+        margin-left: 5%;
+    }
+    
 }
